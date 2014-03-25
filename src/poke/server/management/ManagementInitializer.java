@@ -27,8 +27,6 @@ public class ManagementInitializer extends ChannelInitializer<SocketChannel> {
 			pipeline.addLast("inflater", ZlibCodecFactory.newZlibDecoder(ZlibWrapper.GZIP));
 		}
 
-		
-
 		/**
 		 * length (4 bytes).
 		 * 
